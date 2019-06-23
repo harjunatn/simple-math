@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Simple Math</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav
+        class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm navbar-custom"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-img" src="assets/logo.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sum.html">Sum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="multiply.html">Multiply</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="prime.html">Prime</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fibonacci.html">Fibonacci</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+      <div class="jumbotron-container jumbotron-fibonacci">
+        <h1 class="main-title text-white mb-5">
+          Find first N Fibonacci numbers
+        </h1>
+        <div class="d-flex justify-content-center">
+          <input
+            id="input"
+            class="form-control form-control-lg w-25"
+            type="number"
+            placeholder="input N positive number"
+          />
+        </div>
+        <span id="calculate" class="btn-calculate btn-calculate-fibonacci"
+          >Calculate</span
+        >
+      </div>
+      <div class="container text-center text-break">
+        <h2 class="display-4 mt-5 mb-5">Result</h2>
+        <h2 id="warning" class="display-4 text-danger"></h2>
+        <h2 id="result" class="display-4"></h2>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 border-top bg-dark">
+      <div class="container">
+        <span class="text-muted">Copyright &copy; harjunatn. 2019. </span>
+      </div>
+    </footer>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#calculate").click(function() {
+          var input = $("#input").val();
+          if (input === "") {
+            $("#warning").text("Please fill the input box");
+            $("#result").text("");
+          } else if (input <= 2) {
+            $("#warning").text("input an integer more than 2");
+            $("#result").text("");
+          } else {
+            Fibonacci(input);
+            $("#warning").text("");
+
+            $("#input").text("");
+            $("#input").val("");
+          }
+        });
+      });
+
+      function Fibonacci(input) {
+        var firstNumber = 0;
+        var secondNumber = 1;
+        var nextNumber;
+        var result = $("#result");
+        var output = "0,1";
+
+        for (var i = 3; i <= input; i++) {
+          nextNumber = firstNumber + secondNumber;
+          output += "," + nextNumber;
+          firstNumber = secondNumber;
+          secondNumber = nextNumber;
+
+          result.text(output);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+main {
+  padding-top: 8rem;
+}
+
+.navbar-custom {
+  border-top: 2rem solid #39a5e4;
+}
+
+.logo-img {
+  width: 8rem;
+  margin-right: 5rem;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+}
+
+.jumbotron-container {
+  background-image: url("../assets/background.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 7rem;
+}
+
+.jumbotron-sum {
+  background-image: url("../assets/sum-back.jpg");
+  padding: 5rem;
+}
+
+.jumbotron-multiply {
+  background-image: url("../assets/multiply-back.jpg");
+  padding: 5rem;
+}
+
+.jumbotron-prime {
+  background-image: url("../assets/prime-back.jpg");
+  padding: 5rem;
+}
+
+.jumbotron-fibonacci {
+  background-image: url("../assets/fibo-back.jpg");
+  background-position: center;
+  padding: 5rem;
+}
+
+.main-title,
+.sub-title {
+  text-shadow: 2px 2px #000;
+}
+
+.operator {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.btn-custom {
+  width: 30rem;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+#btn-sum {
+  background-color: #e766a5;
+  border: 3px solid #e766a5;
+}
+
+#btn-sum:hover {
+  background-color: #fff;
+  border: 3px solid #e766a5;
+  color: #e766a5;
+}
+
+#btn-multiply {
+  background-color: #965aa3;
+  border: 3px solid #965aa3;
+}
+
+#btn-multiply:hover {
+  background-color: #fff;
+  border: 3px solid #965aa3;
+  color: #965aa3;
+}
+
+#btn-prime {
+  background-color: #4dbc93;
+  border: 3px solid #4dbc93;
+}
+
+#btn-prime:hover {
+  background-color: #fff;
+  border: 3px solid #4dbc93;
+  color: #4dbc93;
+}
+
+#btn-fibonacci {
+  background-color: #ed9c32;
+  border: 3px solid #ed9c32;
+}
+
+#btn-fibonacci:hover {
+  background-color: #fff;
+  border: 3px solid #ed9c32;
+  color: #ed9c32;
+}
+
+.btn-calculate {
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-calculate-sum {
+  background-color: #e766a5;
+  border: 3px solid #e766a5;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-sum:hover {
+  background-color: #fff;
+  border: 3px solid #e766a5;
+  color: #e766a5;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-multiply {
+  background-color: #965aa3;
+  border: 3px solid #965aa3;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-multiply:hover {
+  background-color: #fff;
+  border: 3px solid #965aa3;
+  color: #965aa3;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-prime {
+  background-color: #4dbc93;
+  border: 3px solid #4dbc93;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-prime:hover {
+  background-color: #fff;
+  border: 3px solid #4dbc93;
+  color: #4dbc93;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-fibonacci {
+  background-color: #ed9c32;
+  border: 3px solid #ed9c32;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-calculate-fibonacci:hover {
+  background-color: #fff;
+  border: 3px solid #ed9c32;
+  color: #ed9c32;
+  transition: ease-in-out 0.2s;
+}
