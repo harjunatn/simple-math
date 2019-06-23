@@ -2,6 +2,10 @@ main {
   padding-top: 8rem;
 }
 
+#result {
+  margin-bottom: 5rem;
+}
+
 .navbar-custom {
   border-top: 2rem solid #39a5e4;
 }
@@ -13,6 +17,18 @@ main {
 
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1.5rem;
+}
+
+#btn-contact {
+  background-color: #39a5e4;
+  border-radius: 2rem;
+  border: 3px solid #39a5e4;
+}
+
+#btn-contact:hover {
+  background-color: #fff;
+  border: 3px solid #39a5e4;
+  color: #39a5e4;
 }
 
 .jumbotron-container {
@@ -167,4 +183,13 @@ main {
   border: 3px solid #ed9c32;
   color: #ed9c32;
   transition: ease-in-out 0.2s;
+}
+
+.second-footer {
+  background-color: #222222;
+}
+
+.icon-social-media {
+  width: 3rem;
+  margin-left: 1rem;
 }
